@@ -2,27 +2,31 @@
 <html>
 <head>
 	<title>Gif's brah</title>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
 
-	<div id="gifButtons">
-			
-	</div>
+<div class="container">
 
-	<form id="gif-form">
-		<label for="gif-input">Add a gif </label>
-		<input type="text" id="gif-input"><br>
-
-		<input id="addGif" type="submit" value="submit">
+<div class="jumbotron">
+  <h1>Feels Generator</h1>
+  <p>Type a feel in the search box to generate some feels</p>
+  	<form id="gif-form">
+		<label for="gif-input">Search a feel: </label>
+		<input type="text" id="gif-input">
+		<input class="btn btn-default" id="addGif" type="submit" value="I feel it">
 	</form>	
+</div>
 
-	<div id="gifs">
-		
-	</div>
+	<div id="gifButtons"></div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<div id="gifs"></div>
+
 	<script src="assets/javascript/app.js"></script>
+
+</div>
 
 </body>
 </html>
